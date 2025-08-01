@@ -1,0 +1,25 @@
+@import "tailwindcss";
+.nav {
+  @apply hidden;
+}
+svg {
+  @apply text-[1.5rem];
+}
+.navbar li a,
+.topbar .search,
+.topbar button {
+  @apply flex items-center gap-2 px-4 py-2;
+}
+.navbar li a:hover {
+  @apply bg-black text-white rounded-full;
+}
+.navbar li a,
+svg {
+  cursor: pointer;
+}
+.entry {
+  @apply flex flex-col gap-8 items-center justify-center h-dvh;
+}
+.entry input {
+  @apply border-b outline-none py-2 w-full;
+}
