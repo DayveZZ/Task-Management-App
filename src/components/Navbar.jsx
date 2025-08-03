@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div className="nav flex">
       <div className="h-dvh p-8 pr-0 sticky top-0">
-        <div className="navbar w-fit h-full rounded-lg bg-linear-to-t from-neutral-100 to-neutral-500 px-4">
+        <div className="navbar w-fit h-full rounded-lg bg-linear-to-t from-neutral-100 to-neutral-700 px-4">
           <h1 className="flex items-center justify-center h-16 text-2xl border-b border-white mb-8">
             TM <span className="text-sm text-white">App</span>
           </h1>
@@ -30,7 +30,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/todo">
-                <LuListTodo /> ToDo App
+                <LuListTodo /> ToDo
               </Link>
             </li>
             <li>

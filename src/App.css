@@ -20,6 +20,12 @@ svg {
 .entry {
   @apply flex flex-col gap-8 items-center justify-center h-dvh;
 }
-.entry input {
-  @apply border-b outline-none py-2 w-full;
+.entry .input {
+  @apply border-b  py-2 w-full flex gap-4;
+}
+.entry .input svg {
+  @apply text-[1.5rem] text-black/80;
+}
+.entry .input input {
+  @apply outline-none w-full;
 }
