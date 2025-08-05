@@ -1,6 +1,6 @@
 @import "tailwindcss";
 .nav {
-  @apply hidden;
+  /* @apply hidden; */
 }
 svg {
   @apply text-[1.5rem];

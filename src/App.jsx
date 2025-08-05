@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <LogIn />
-      <Navbar />
+      {/* <Navbar /> */}
     </>
   );
 }
