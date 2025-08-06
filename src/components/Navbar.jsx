@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, Link } from "react-router";
 import Dashboard from "./Dashboard";
 import ToDo from "./ToDo";
@@ -6,6 +6,7 @@ import Notes from "./Notes";
 import User from "./User";
 import Settings from "./Settings";
 import Help from "./Help";
+import LogOut from "./LogOut";
 
 // ICONS
 import { IoMdSettings, IoMdHelpCircle, IoIosSearch } from "react-icons/io";
@@ -15,6 +16,7 @@ import { FaNoteSticky } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
   return (
     <div className="nav flex">
       <div className="h-dvh p-8 pr-0 sticky top-0">
@@ -63,7 +65,12 @@ const Navbar = () => {
             <input type="text" placeholder="Search" className="outline-none " />
             <IoIosSearch />
           </div>
-          <button>
+          <button
+            className="bg-white rounded"
+            onClick={() => {
+              setShow((prev) => !prev);
+            }}
+          >
             <FaUser />
           </button>
         </div>
@@ -79,6 +86,8 @@ const Navbar = () => {
           </Routes>
         </div>
       </div>
+
+      {show && <LogOut />}
     </div>
   );
 };
